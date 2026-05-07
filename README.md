@@ -54,7 +54,7 @@
 
 - 평통사 회원가입: https://www.spark946.org/about/join
 - 평통사 홈페이지: https://www.spark946.org
-- 핵추진잠수함 문제점 자세히 알아보기: https://www.spark946.org/notice/comment?tpf=board/view&board_code=6&code=28303
+- 핵추진잠수함 도입의 문제점 자세히 알아보기: https://www.spark946.org/notice/comment?tpf=board/view&board_code=6&code=28303
 
 ## 조회수 확인
 
