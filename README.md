@@ -44,7 +44,7 @@
 - 평통사 회원가입 링크
 - 공유 버튼
   - 텔레그램 공유
-  - 모바일 기본 공유 시트
+  - 카톡/문자 공유: 모바일 기본 공유 시트
   - 링크 복사
 - 이미지 저장
   - 전체 카드뉴스 ZIP 다운로드
@@ -54,6 +54,7 @@
 
 - 평통사 회원가입: https://www.spark946.org/about/join
 - 평통사 홈페이지: https://www.spark946.org
+- 핵추진잠수함 문제점 자세히 알아보기: https://www.spark946.org/notice/comment?tpf=board/view&board_code=6&code=28303
 
 ## 조회수 확인
 
