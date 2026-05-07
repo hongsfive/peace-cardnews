@@ -40,27 +40,8 @@ function openPopup(url, width = 640, height = 640) {
   window.open(url, '_blank', `noopener,noreferrer,width=${width},height=${height}`);
 }
 
-function shareKakao() {
-  // 별도 Kakao Developers JavaScript 키 없이 가능한 간단 공유 방식입니다.
-  const text = `${siteTitle}\n${siteDescription}`;
-  const url = `https://sharer.kakao.com/talk/friends/picker/link?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(text)}`;
-  openPopup(url, 520, 680);
-}
-
 function shareTelegram() {
   const url = `https://t.me/share/url?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(siteTitle + ' - ' + siteDescription)}`;
-  openPopup(url, 640, 520);
-}
-
-function shareTwitter() {
-  const text = `${siteTitle}\n${siteDescription}`;
-  const hashtags = '핵잠수함,한반도평화,평통사';
-  const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(text)}&hashtags=${encodeURIComponent(hashtags)}`;
-  openPopup(url, 640, 520);
-}
-
-function shareFacebook() {
-  const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(getShareUrl())}`;
   openPopup(url, 640, 520);
 }
 
@@ -109,17 +90,6 @@ function fallbackCopy(text, customMessage) {
     showToast('복사에 실패했습니다. 주소창의 링크를 복사해 주세요.');
   }
   document.body.removeChild(textarea);
-}
-
-function downloadCurrentImage() {
-  const cardNumber = String(currentCard + 1).padStart(2, '0');
-  const link = document.createElement('a');
-  link.href = `images/card${cardNumber}.jpg`;
-  link.download = `nuclear-submarine-cardnews-${cardNumber}.jpg`;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  showToast(`${currentCard + 1}번 카드 저장을 시작합니다.`);
 }
 
 function showToast(message) {

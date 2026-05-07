@@ -95,15 +95,11 @@
 
     <section class="share-section container" aria-label="카드뉴스 공유하기">
       <h2>공유하기</h2>
-      <p>주변에 카드뉴스를 함께 나눠주세요. 인스타그램은 이미지 저장 후 앱에서 올리는 방식이 가장 안정적입니다.</p>
-      <div class="share-grid">
-        <button class="share-button kakao" type="button" onclick="shareKakao()">카카오톡</button>
+      <p>주변에 카드뉴스를 함께 나눠주세요. 인스타그램은 전체 이미지 ZIP을 내려받은 뒤 앱에서 올리는 방식이 가장 안정적입니다.</p>
+      <div class="share-grid compact">
         <button class="share-button telegram" type="button" onclick="shareTelegram()">텔레그램</button>
-        <button class="share-button x" type="button" onclick="shareTwitter()">X / 트위터</button>
-        <button class="share-button facebook" type="button" onclick="shareFacebook()">페이스북</button>
         <button class="share-button native" type="button" onclick="nativeShare()">모바일 공유</button>
         <button class="share-button copy" type="button" onclick="copyLink()">링크 복사</button>
-        <button class="share-button download" type="button" onclick="downloadCurrentImage()">현재 카드 저장</button>
         <a class="share-button download-all" href="cardnews-images.zip" download>전체 이미지 ZIP</a>
       </div>
     </section>

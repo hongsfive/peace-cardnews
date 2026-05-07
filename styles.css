@@ -262,13 +262,9 @@ a { color: inherit; }
   background: #e7effa;
 }
 .share-button { color: #fff; }
-.share-button.kakao { color: #211b00; background: #fee500; }
 .share-button.telegram { background: #229ed9; }
-.share-button.x { background: #111827; }
-.share-button.facebook { background: #1877f2; }
 .share-button.native { background: #556b8e; }
 .share-button.copy { background: #0d3671; }
-.share-button.download { background: #14804a; }
 .share-button.download-all { background: #7a3db8; }
 .site-footer {
   padding: 28px 0 40px;
