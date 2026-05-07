@@ -5,17 +5,17 @@ const siteTitle = '한국이 ‘핵잠수함’을 도입한다고요?';
 const siteDescription = '든든한 방패일지, 위험한 도박일지… 우리가 꼭 알아야 할 5가지 진실';
 const joinUrl = 'https://www.spark946.org/about/join';
 
-function getShareMessage() {
+function getShareMessage({ includePageUrl = true } = {}) {
   const pageUrl = getShareUrl();
+  const pageUrlBlock = includePageUrl ? `\n\n👆 웹에서 자세히 보기: ${pageUrl}` : '';
+
   return `🚢 핵잠수함 도입, 과연 누구를 위한 것일까요?
 
 카드로 알아보는 핵잠수함 도입의 진실
 - 좁은 한반도 바다에 적합하지 않은 핵잠수함
 - 자주국방이 아닌 미국 의존 심화
 - 170조원의 막대한 혈세 낭비
-- 대만분쟁 시 미중간 전쟁에 끌려갈 위험
-
-👆 웹에서 자세히 보기: ${pageUrl}
+- 대만분쟁 시 미중간 전쟁에 끌려갈 위험${pageUrlBlock}
 
 진짜 자주국방과 한반도 평화를 위해
 평화와통일을여는사람들과 함께해 주세요.
@@ -62,7 +62,7 @@ function openPopup(url, width = 640, height = 640) {
 }
 
 function shareTelegram() {
-  const url = `https://t.me/share/url?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(getShareMessage())}`;
+  const url = `https://t.me/share/url?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(getShareMessage({ includePageUrl: false }))}`;
   openPopup(url, 640, 520);
 }
 
