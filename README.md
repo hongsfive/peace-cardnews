@@ -13,6 +13,7 @@
 ├── styles.css
 ├── script.js
 ├── README.md
+├── cardnews-images.zip
 └── images/
     ├── card01.jpg
     ├── card02.jpg
@@ -41,13 +42,54 @@
 - 키보드 이동: ← / → / Home / End
 - 카드 번호와 점 인디케이터
 - 평통사 회원가입 링크
-- 링크 복사 버튼
+- 공유 버튼
+  - 카카오톡 간단 공유
+  - 텔레그램 공유
+  - X/트위터 공유
+  - 페이스북 공유
+  - 모바일 기본 공유 시트
+  - 링크 복사
+- 이미지 저장
+  - 현재 카드 이미지 저장
+  - 전체 카드뉴스 ZIP 다운로드
 - SNS 공유용 Open Graph 이미지 설정
 
 ## 주요 링크
 
 - 평통사 회원가입: https://www.spark946.org/about/join
 - 평통사 홈페이지: https://www.spark946.org
+
+## 조회수 확인
+
+현재 별도 추적 스크립트는 넣지 않았습니다. 방문자 통계는 GitHub 저장소에서 확인합니다.
+
+1. GitHub 저장소 접속: https://github.com/hongsfive/peace-cardnews
+2. 상단 `Insights` 클릭
+3. 왼쪽 `Traffic` 클릭
+4. 확인 가능한 항목
+   - Views: 페이지 조회수
+   - Unique visitors: 순방문자 수
+   - Referring sites: 유입 사이트
+   - Popular content: 많이 본 경로
+
+주의:
+
+- GitHub Traffic 통계는 저장소 소유자/권한 있는 사용자에게만 보입니다.
+- 보통 최근 14일 중심으로 보여줍니다.
+- 더 정확한 장기 통계가 필요하면 GoatCounter, Cloudflare Web Analytics, Plausible, Google Analytics 중 하나를 붙이는 방식이 필요합니다.
+- 시민단체 홍보물에는 쿠키 없는 가벼운 통계 도구인 GoatCounter 또는 Cloudflare Web Analytics가 비교적 적합합니다.
+
+## hongsfive URL 노출 관련
+
+현재 GitHub Pages 구조상 주소에 GitHub 계정명 `hongsfive`가 들어갑니다.
+
+해결 방법:
+
+- 단기: 현재 URL 그대로 사용하거나 단축 URL 사용
+- 중기: 중립 GitHub 계정/조직으로 저장소 이전
+- 장기: 커스텀 도메인 연결
+  - 예: `cardnews.spark946.org`
+  - 평통사 도메인 DNS 설정 권한이 필요합니다.
 
 ## 배포 방식
 
