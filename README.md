@@ -1,4 +1,9 @@
-# 평화자료실 카드뉴스 웹사이트 GitHub Pages 배포 가이드
+# 평화자료실 카드뉴스 웹사이트
+
+## 🌐 배포 URL
+
+- 웹사이트: https://hongsfive.github.io/peace-cardnews/
+- GitHub 저장소: https://github.com/hongsfive/peace-cardnews
 
 ## 📋 완성된 파일 구조
 
