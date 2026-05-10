@@ -64,9 +64,8 @@
 
 1. Cloudflare Web Analytics
    - 장점: 무료, 쿠키 없음, 공개 배지 없음, 페이지뷰/방문자/유입 경로 확인 가능
-   - 필요: Cloudflare 계정에서 사이트 등록 후 제공되는 Beacon Token
-   - 삽입 예시:
-     `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"BEACON_TOKEN"}'></script>`
+   - 상태: 연결 완료
+   - 확인 위치: Cloudflare 대시보드 → Analytics & Logs → Web Analytics → 해당 사이트
 
 2. GoatCounter
    - 장점: 가벼움, 시민단체 홍보물에 적합, 공개 배지 없이 운영 가능
