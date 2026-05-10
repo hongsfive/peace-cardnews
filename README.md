@@ -58,23 +58,20 @@
 
 ## 조회수 확인
 
-현재 별도 추적 스크립트는 넣지 않았습니다. 방문자 통계는 GitHub 저장소에서 확인합니다.
+개인정보 친화적인 가벼운 통계 도구인 GoatCounter 스크립트를 삽입했습니다.
 
-1. GitHub 저장소 접속: https://github.com/hongsfive/peace-cardnews
-2. 상단 `Insights` 클릭
-3. 왼쪽 `Traffic` 클릭
-4. 확인 가능한 항목
-   - Views: 페이지 조회수
-   - Unique visitors: 순방문자 수
-   - Referring sites: 유입 사이트
-   - Popular content: 많이 본 경로
+- 집계 대시보드: https://peace-cardnews.goatcounter.com/
+- 집계 스크립트: `https://peace-cardnews.goatcounter.com/count`
 
 주의:
 
-- GitHub Traffic 통계는 저장소 소유자/권한 있는 사용자에게만 보입니다.
-- 보통 최근 14일 중심으로 보여줍니다.
-- 더 정확한 장기 통계가 필요하면 GoatCounter, Cloudflare Web Analytics, Plausible, Google Analytics 중 하나를 붙이는 방식이 필요합니다.
-- 시민단체 홍보물에는 쿠키 없는 가벼운 통계 도구인 GoatCounter 또는 Cloudflare Web Analytics가 비교적 적합합니다.
+- 실제 집계를 시작하려면 GoatCounter에 `peace-cardnews` 사이트 코드가 생성되어 있어야 합니다.
+- 추적 스크립트가 붙은 이후 방문부터 집계됩니다. 과거 방문은 소급 집계되지 않습니다.
+- GitHub 저장소 기본 Traffic도 보조적으로 확인할 수 있습니다.
+  1. GitHub 저장소 접속: https://github.com/hongsfive/peace-cardnews
+  2. 상단 `Insights` 클릭
+  3. 왼쪽 `Traffic` 클릭
+  4. Views, Unique visitors, Referring sites, Popular content 확인
 
 ## hongsfive URL 노출 관련
 
