@@ -58,15 +58,19 @@
 
 ## 조회수 확인
 
-개인정보 친화적인 가벼운 통계 도구인 GoatCounter 스크립트를 삽입했습니다.
+계정 없이 바로 작동하는 `hits.sh` 공개 카운터를 하단 푸터에 붙였습니다.
 
-- 집계 대시보드: https://peace-cardnews.goatcounter.com/
-- 집계 스크립트: `https://peace-cardnews.goatcounter.com/count`
+- 카운터 이미지: `https://hits.sh/hongsfive.github.io/peace-cardnews.svg?view=today-total&style=flat-square&label=조회수&color=0d3671&labelColor=647084`
+- 표시 방식: `오늘 조회수 / 전체 조회수`
+- 확인 위치: 웹페이지 맨 아래 푸터
+- 공개 확인: 위 SVG 주소를 직접 열어도 현재 카운터 값을 볼 수 있습니다.
 
 주의:
 
-- 실제 집계를 시작하려면 GoatCounter에 `peace-cardnews` 사이트 코드가 생성되어 있어야 합니다.
-- 추적 스크립트가 붙은 이후 방문부터 집계됩니다. 과거 방문은 소급 집계되지 않습니다.
+- 스크립트형 정밀 분석이 아니라, 카운터 이미지가 로드될 때 증가하는 가벼운 공개 카운터입니다.
+- 봇, 미리보기, 반복 새로고침도 포함될 수 있어 정밀한 순방문자 통계는 아닙니다.
+- 붙인 이후부터 카운트됩니다. 과거 방문은 소급 집계되지 않습니다.
+- 더 정확한 장기 통계가 필요하면 GoatCounter, Cloudflare Web Analytics, Plausible, Google Analytics 중 하나를 계정 생성 후 연결해야 합니다.
 - GitHub 저장소 기본 Traffic도 보조적으로 확인할 수 있습니다.
   1. GitHub 저장소 접속: https://github.com/hongsfive/peace-cardnews
   2. 상단 `Insights` 클릭
