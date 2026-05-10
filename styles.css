@@ -294,14 +294,6 @@ a { color: inherit; }
   font-size: 0.9rem;
 }
 .site-footer p { margin: 4px 0; }
-.view-counter {
-  margin-top: 10px;
-}
-.view-counter img {
-  display: inline-block;
-  height: 20px;
-  vertical-align: middle;
-}
 
 .toast {
   position: fixed;

@@ -56,26 +56,29 @@
 - 평통사 홈페이지: https://www.spark946.org
 - 핵추진잠수함 도입의 문제점 자세히 알아보기: https://www.spark946.org/notice/comment?tpf=board/view&board_code=6&code=28303
 
-## 조회수 확인
+## 방문자 통계 확인
 
-계정 없이 바로 작동하는 `hits.sh` 공개 카운터를 하단 푸터에 붙였습니다.
+목표는 공개 배지가 아니라 관리자만 보는 방문자/사용자 통계다. GitHub Pages 정적 사이트는 서버 로그를 제공하지 않으므로, 실제 방문자 수·순방문자·유입 경로를 보려면 별도 웹 분석 도구를 연결해야 한다.
 
-- 카운터 이미지: `https://hits.sh/hongsfive.github.io/peace-cardnews.svg?view=today-total&style=flat-square&label=조회수&color=0d3671&labelColor=647084`
-- 표시 방식: `오늘 조회수 / 전체 조회수`
-- 확인 위치: 웹페이지 맨 아래 푸터
-- 공개 확인: 위 SVG 주소를 직접 열어도 현재 카운터 값을 볼 수 있습니다.
+권장 선택지:
+
+1. Cloudflare Web Analytics
+   - 장점: 무료, 쿠키 없음, 공개 배지 없음, 페이지뷰/방문자/유입 경로 확인 가능
+   - 필요: Cloudflare 계정에서 사이트 등록 후 제공되는 Beacon Token
+   - 삽입 예시:
+     `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"BEACON_TOKEN"}'></script>`
+
+2. GoatCounter
+   - 장점: 가벼움, 시민단체 홍보물에 적합, 공개 배지 없이 운영 가능
+   - 필요: GoatCounter 사이트 코드 생성
+   - 삽입 예시:
+     `<script data-goatcounter="https://SITE_CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>`
 
 주의:
 
-- 스크립트형 정밀 분석이 아니라, 카운터 이미지가 로드될 때 증가하는 가벼운 공개 카운터입니다.
-- 봇, 미리보기, 반복 새로고침도 포함될 수 있어 정밀한 순방문자 통계는 아닙니다.
-- 붙인 이후부터 카운트됩니다. 과거 방문은 소급 집계되지 않습니다.
-- 더 정확한 장기 통계가 필요하면 GoatCounter, Cloudflare Web Analytics, Plausible, Google Analytics 중 하나를 계정 생성 후 연결해야 합니다.
-- GitHub 저장소 기본 Traffic도 보조적으로 확인할 수 있습니다.
-  1. GitHub 저장소 접속: https://github.com/hongsfive/peace-cardnews
-  2. 상단 `Insights` 클릭
-  3. 왼쪽 `Traffic` 클릭
-  4. Views, Unique visitors, Referring sites, Popular content 확인
+- 분석 도구를 붙인 이후 방문부터 집계된다. 과거 방문은 소급 집계되지 않는다.
+- GitHub 저장소 기본 Traffic은 보조 지표일 뿐, GitHub Pages 웹 방문자 통계로는 부정확하다.
+- 공개 카운터 배지는 사용하지 않는다. 필요한 경우 관리자용 분석 도구를 우선한다.
 
 ## hongsfive URL 노출 관련
 
