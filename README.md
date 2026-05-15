@@ -58,26 +58,26 @@
 
 ## 방문자 통계 확인
 
-목표는 공개 배지가 아니라 관리자만 보는 방문자/사용자 통계다. GitHub Pages 정적 사이트는 서버 로그를 제공하지 않으므로, 실제 방문자 수·순방문자·유입 경로를 보려면 별도 웹 분석 도구를 연결해야 한다.
+두 가지를 함께 사용한다.
 
-권장 선택지:
-
-1. Cloudflare Web Analytics
+1. 관리자용 비공개 통계: Cloudflare Web Analytics
    - 장점: 무료, 쿠키 없음, 공개 배지 없음, 페이지뷰/방문자/유입 경로 확인 가능
    - 상태: 연결 완료
    - 확인 위치: Cloudflare 대시보드 → Analytics & Logs → Web Analytics → 해당 사이트
 
-2. GoatCounter
-   - 장점: 가벼움, 시민단체 홍보물에 적합, 공개 배지 없이 운영 가능
-   - 필요: GoatCounter 사이트 코드 생성
-   - 삽입 예시:
-     `<script data-goatcounter="https://SITE_CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>`
+2. 카드뉴스별 공개 단순 카운터: hits.sh
+   - 목적: 각 카드뉴스 페이지별 대략적인 공개 조회수 표시
+   - 현재 핵잠수함 카드뉴스 카운터:
+     `https://hits.sh/hongsfive.github.io/peace-cardnews.svg?view=today-total&style=flat-square&label=오늘/전체&color=0d3671&labelColor=647084`
+   - 표시 위치: 페이지 하단 푸터
+   - 표시 의미: `오늘 조회수 / 전체 조회수`
 
 주의:
 
+- Cloudflare Web Analytics는 관리자용 통계로 사용한다.
+- hits.sh 공개 카운터는 가벼운 공개 조회수 표시이며, 봇/미리보기/반복 새로고침이 포함될 수 있다.
 - 분석 도구를 붙인 이후 방문부터 집계된다. 과거 방문은 소급 집계되지 않는다.
 - GitHub 저장소 기본 Traffic은 보조 지표일 뿐, GitHub Pages 웹 방문자 통계로는 부정확하다.
-- 공개 카운터 배지는 사용하지 않는다. 필요한 경우 관리자용 분석 도구를 우선한다.
 
 ## hongsfive URL 노출 관련
 

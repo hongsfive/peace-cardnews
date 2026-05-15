@@ -294,6 +294,24 @@ a { color: inherit; }
   font-size: 0.9rem;
 }
 .site-footer p { margin: 4px 0; }
+.view-counter {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.view-counter-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.view-counter img {
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+}
 
 .toast {
   position: fixed;
