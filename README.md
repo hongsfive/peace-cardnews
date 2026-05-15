@@ -68,9 +68,10 @@
 2. 카드뉴스별 공개 단순 카운터: hits.sh
    - 목적: 각 카드뉴스 페이지별 대략적인 공개 조회수 표시
    - 현재 핵잠수함 카드뉴스 카운터:
-     `https://hits.sh/hongsfive.github.io/peace-cardnews.svg?view=today-total&style=flat-square&label=오늘/전체&color=0d3671&labelColor=647084`
+     `https://hits.sh/hongsfive.github.io/peace-cardnews.svg?view=today-total&style=flat-square&label=오늘/전체&color=0d3671&labelColor=647084&extraCount=130`
    - 표시 위치: 페이지 하단 푸터
    - 표시 의미: `오늘 조회수 / 전체 조회수`
+   - 보정값: 기존 공유 기간을 고려해 전체 조회수에 `130`을 더해 표시
 
 주의:
 
